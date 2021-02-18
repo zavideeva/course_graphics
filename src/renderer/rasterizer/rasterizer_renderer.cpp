@@ -26,6 +26,8 @@ void cg::renderer::rasterization_renderer::init()
 	camera->set_z_near(settings->camera_z_near);
 
 	// Create rasterizer
+
+
 	rasterizer =
 		std::make_shared<cg::renderer::rasterizer<cg::vertex, cg::unsigned_color>>();
 	rasterizer->set_render_target(render_target, depth_buffer);
